@@ -46,14 +46,45 @@ body {
 
 .headerMenu {
     display: inline-block;
+    margin-left: 16px;
 }
 .headerMenu ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
-.headerMenu > ul > li {
+
+.headerMenu-base {
+    color: #ffffff;
+    font-size: 18px;
+}
+.headerMenu-base > li {
+    margin: 0 16px;
     display: inline-block;
+}
+
+.headerMenu-drop {
+    position: relative;
+}
+.headerMenu-drop:hover > ul {
+    display: block;
+}
+
+.headerMenu-sub {
+    display: none;
+    position: absolute;
+    /*background-color: rgba(46, 189, 189, 1);*/
+    background-color: #ea10de;
+    min-width: 150px;
+}
+.headerMenu-sub > li > a {
+    display: block;
+    font-size: 16px;
+    padding: 8px 16px;
+    color: #ffffff;
+}
+.headerMenu-sub > li > a:hover {
+    background-color: #ea1000;
 }
 
 .contacts {
