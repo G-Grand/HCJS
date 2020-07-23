@@ -21,6 +21,7 @@ body {
     height: 80px;
     position: fixed;
     width: 100%;
+    z-index: 10;
 }
 
 .logo {
@@ -120,5 +121,54 @@ body {
 }
 /*
     goal (end)
+*/
+
+/*
+    info (start)
+*/
+.info {
+    background: #f7f1e9;
+    padding: 1px;
+}
+
+.info-wrapp {
+    margin: 300px 0;
+    position: relative;
+}
+.info-wrapp::before {
+    content: " ";
+    padding: 47%;
+    background-size: contain;
+    background-position-y: 48%;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    background-image: url("img/border_2.png");
+}
+.info-wrapp::after {
+    content: " ";
+    padding: 47%;
+    background-size: contain;
+    background-position-y: 48%;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    background-image: url("img/border_4.png");
+}
+
+.info-content {
+    text-align: center;
+    padding: 10px 100px;
+    z-index: 2;
+    position: relative;
+    background: #f7f1e9;
+    box-shadow: 0px -23px 20px -23px rgba(93, 62, 34, .8), 0 23px 20px -23px rgba(93, 62, 34, .8);
+}
+.info-content > h3 {
+    font-size: 24px;
+}
+.info-content > p {
+    font-size: 18px;
+}
+/*
+    info (end)
 */
 
